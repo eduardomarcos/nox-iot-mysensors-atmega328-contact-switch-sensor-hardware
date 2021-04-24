@@ -133,10 +133,10 @@ TX
 Wire Wire Line
 	3850 4150 3650 4150
 $Comp
-L Regulator_Linear:LM1084-3.3 V.REG.3.3V
+L Regulator_Linear:LM1084-3.3 V.REG.3.3V1
 U 1 1 607D7EBF
 P 4950 1450
-F 0 "V.REG.3.3V" H 4950 1692 50  0000 C CNN
+F 0 "V.REG.3.3V1" H 4950 1692 50  0000 C CNN
 F 1 "WAVGAT 3.3V" H 4950 1601 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4950 1700 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 4950 1450 50  0001 C CNN
@@ -155,7 +155,7 @@ U 1 1 6083D47A
 P 6650 3350
 F 0 "R1" H 6720 3396 50  0000 L CNN
 F 1 "10K" H 6720 3305 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6580 3350 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 6580 3350 50  0001 C CNN
 F 3 "~" H 6650 3350 50  0001 C CNN
 	1    6650 3350
 	1    0    0    -1  
@@ -331,10 +331,10 @@ F 3 "" H 7100 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 BATT
+L Connector_Generic:Conn_01x02 BATT1
 U 1 1 608D83D1
 P 3250 1200
-F 0 "BATT" V 3214 1012 50  0000 R CNN
+F 0 "BATT1" V 3214 1012 50  0000 R CNN
 F 1 "Battery Connection" V 3123 1012 50  0000 R CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3250 1200 50  0001 C CNN
 F 3 "~" H 3250 1200 50  0001 C CNN
