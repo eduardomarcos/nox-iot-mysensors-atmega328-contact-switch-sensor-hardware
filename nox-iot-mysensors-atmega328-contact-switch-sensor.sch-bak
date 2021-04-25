@@ -374,7 +374,6 @@ F 3 "" H 3050 5150 50  0001 C CNN
 	1    3050 5150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3650 3350
 NoConn ~ 3650 3450
 NoConn ~ 3650 3550
 NoConn ~ 3650 3650
@@ -481,4 +480,61 @@ F 3 "" H 6650 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6650 3050 6650 3200
+Text Notes 8650 750  0    50   ~ 0
+Voltage Divider Battery Sensor
+$Comp
+L Device:R R2
+U 1 1 6084408F
+P 8850 1200
+F 0 "R2" V 8643 1200 50  0000 C CNN
+F 1 "1M" V 8734 1200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 8780 1200 50  0001 C CNN
+F 3 "~" H 8850 1200 50  0001 C CNN
+	1    8850 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 608448EF
+P 9400 1200
+F 0 "R3" V 9193 1200 50  0000 C CNN
+F 1 "430K" V 9284 1200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 9330 1200 50  0001 C CNN
+F 3 "~" H 9400 1200 50  0001 C CNN
+	1    9400 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 60844EED
+P 9550 1200
+F 0 "#PWR0117" H 9550 950 50  0001 C CNN
+F 1 "GND" H 9555 1027 50  0000 C CNN
+F 2 "" H 9550 1200 50  0001 C CNN
+F 3 "" H 9550 1200 50  0001 C CNN
+	1    9550 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 1200 9100 1200
+$Comp
+L power:+BATT #PWR0118
+U 1 1 60846697
+P 8700 1200
+F 0 "#PWR0118" H 8700 1050 50  0001 C CNN
+F 1 "+BATT" H 8715 1373 50  0000 C CNN
+F 2 "" H 8700 1200 50  0001 C CNN
+F 3 "" H 8700 1200 50  0001 C CNN
+	1    8700 1200
+	-1   0    0    1   
+$EndComp
+Text Label 9100 1650 2    50   ~ 0
+BATT_SENSOR
+Wire Wire Line
+	9100 1650 9100 1200
+Connection ~ 9100 1200
+Wire Wire Line
+	9100 1200 9250 1200
+Text Label 3650 3350 0    50   ~ 0
+BATT_SENSOR
 $EndSCHEMATC

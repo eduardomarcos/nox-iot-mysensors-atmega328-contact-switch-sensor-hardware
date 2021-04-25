@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/eduardo/source/nox-iot-mysensors-atmega328-contact-switch-sensor-hardware/nox-iot-mysensors-atmega328-contact-switch-sensor/nox-iot-mysensors-atmega328-contact-switch-sensor.sch)
-    (date "sáb 24 abr 2021 11:36:03")
+    (date "dom 25 abr 2021 12:52:16")
     (tool "Eeschema 5.1.9-73d0e3b20d~88~ubuntu20.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -114,7 +114,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 6084408F))
     (comp (ref R3)
-      (value 430K)
+      (value 330K)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Device) (part R) (description Resistor))
